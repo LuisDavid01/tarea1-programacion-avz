@@ -18,6 +18,12 @@ namespace tarea1_programacion_avz
                 url: "{controller}/{action}/{id}",
                 defaults: new { controller = "Home", action = "Index", id = UrlParameter.Optional }
             );
+
+            routes.MapRoute(
+                name: "YoutubePlaylist",
+                url: "{controller}/{action}/{id}",
+                defaults: new { controller = "YoutubePlaylist", action = "Index", id = UrlParameter.Optional }
+            );
         }
     }
 }

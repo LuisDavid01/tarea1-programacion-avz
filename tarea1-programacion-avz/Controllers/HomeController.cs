@@ -16,6 +16,15 @@ namespace tarea1_programacion_avz.Controllers
         public ActionResult About()
         {
             ViewBag.Message = "Your application description page.";
+            ViewBag.mensaje = "prueba mvc";
+            string[] playlist = new string[5] {
+                "hola",
+                "adios",
+                "3",
+                "4",
+                "5"
+            };
+            ViewBag.playlist = playlist;
 
             return View();
         }
