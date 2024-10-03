@@ -1,47 +1,38 @@
-﻿
-<!DOCTYPE html>
-<html>
-<head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <script src="https://cdn.tailwindcss.com"></script>
-    <title>Playlist youtube</title>
-</head>
-<body>
-    <div class="bg-slate-800 text-white">
-        <h2 class="pt-6 text-2xl text-center">Playlist youtube</h2>
-        <div class="pl-2 ">
-            <section class=" flex content-center">
-                <img src="~/img/descarga (5).jpeg" alt="img 1" width="250" />
-                <p>Travis Scott - MO CITY FLEXOLOGIST</p>
-                <a class="text-red" href="@ViewBag.playlist[0]">Link 1 </a>
-            </section>
-
-            <section>
-                <img src="~/img/descarga (6).jpeg" alt="img 1" width="250" />
-                <p>Ken Carson ss</p>
-                <a href="@ViewBag.playlist[1]">Link 2 </a>
-            </section>
-
-            <section>
-                <img src="~/img/descarga (7).jpeg" alt="img 1" width="250" />
-                <p>Ian Magic johnson</p>
-                <a href="@ViewBag.playlist[2]">Link 3 </a>
-            </section>
-
-            <section>
-                <img src="~/img/descarga (8).jpeg" alt="img 1" width="250" />
-                <p>Flight broke boi</p>
-                <a href="@ViewBag.playlist[3]">Link 4 </a>
-            </section>
-            <section>
-                <img src="~/img/descarga (9).jpeg" alt="img 1" width="250" />
-                <p>MFDOOM ABSOLUTLY</p>
-                <a href="@ViewBag.playlist[4]">Link 5 </a>
-            </section>
+﻿@{
+    ViewData["Title"] = "playlist";
+}
+<div class="container">
+    <h2 class="pt-4 mb-4 fs-3">Playlist youtube</h2>
+    <div class="d-flex flex-wrap">
+        <div class=" mb-2 px-3">
+            <img class="object-fit-cover" src="~/img/descarga (5).jpeg" alt="img 1" height="165 "  />
+            <p class="fs-5 text-center text-break">Travis Scott - <br /> MO CITY FLEXOLOGIST</p>
+            <a class="link-dark link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover" target="_blank" href="@ViewBag.playlist[0]">Link 1 </a>
         </div>
-        
 
+        <div class=" mb-2 px-3">
+            <img class="object-fit-cover" src="~/img/descarga (6).jpeg" alt="img 1"  />
+            <p class="fs-5 text-center">Ken Carson -<br /> ss</p>
+            <a class="link-dark link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover"  href="@ViewBag.playlist[1]">Link 2 </a>
+        </div>
+
+        <div class=" mb-2 px-3 bg-secondary">
+            <img class="object-fit-cover" src="~/img/descarga (7).jpeg" alt="img 1"  />
+            <p class="fs-5 text-center">Ian -<br /> Magic johnson</p>
+            <a class="link-dark link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover"  href="@ViewBag.playlist[2]">Link 3 </a>
+        </div>
+
+        <div class=" mb-2 px-3">
+            <img class="object-fit-cover"  src="~/img/descarga (8).jpeg" alt="img 1" />
+            <p class="fs-5 text-center">Flight -<br /> broke boi</p>
+            <a class="link-dark link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover" href="@ViewBag.playlist[3]">Link 4 </a>
+        </div>
+        <div class=" mb-2 px-3">
+            <img class="object-fit-cover" src="~/img/descarga (9).jpeg" alt="img 1"  />
+            <p class="fs-5 text-center">MFDOOM -<br /> ABSOLUTLY</p>
+            <a class="link-dark link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover"  href="@ViewBag.playlist[4]">Link 5 </a>
+        </div>
     </div>
-</body>
-</html>
+
+
+</div>
